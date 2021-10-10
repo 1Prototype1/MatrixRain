@@ -31,12 +31,12 @@ public class Drop {
             if (getRandomInteger(0, length) == i)
                 text[i][0] = getRandomCharacter();
             if (i == length - 1) {
-                g2.setColor(new Color(57, 237, 117));
+                g2.setColor(new Color(255, 24, 17));
                 text[i][0] = '*';
             } else if (text[i][0] >= '0' && text[i][0] < '5') {
                 g2.setColor(new Color(45, 4, 224));
             } else {
-                g2.setColor(new Color(87, 0, 107));
+                g2.setColor(new Color(87, 70, 187));
             }
 
             g2.drawChars(text[i], 0, 1, x, y + (i * fontSize));
@@ -56,3 +56,5 @@ public class Drop {
     public boolean isOffScreen() {
         return (y > com.aston.matrix.Config.SCREEN_SIZEy);
     }
+// Nice Matrix 
+// Keanu Reeves coming Soon!
